@@ -1,15 +1,15 @@
 package solidLab.p02_OpenClosedPrinciple.p01_FileStream;
 
 public class Progress {
-    private final File file;
+    private final Entity entity;
 
-    public Progress(File file)
+    public Progress(Entity entity)
     {
-        this.file = file;
+        this.entity = entity;
     }
 
     public int getCurrentPercent()
     {
-        return this.file.getSent() * 100 / this.file.getLength();
+        return this.entity.getSent() * 100 / this.entity.getLength();
     }
 }
